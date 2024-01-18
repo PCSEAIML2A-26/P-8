@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".mentalHealthResultActivity">
+<com.airbnb.lottie.LottieAnimationView
+    android:layout_width="wrap_content"
+    android:layout_height="160dp"
+    app:lottie_rawRes="@raw/brain"
+    android:layout_gravity="center"
+    android:layout_marginTop="30dp"
+    app:lottie_loop="true"
+
+    app:lottie_autoPlay="true"/>
+    <TextView
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:textSize="18dp"
+        android:text="Based on your responses your Mental Health level is:"/>
+    <TextView
+        android:id="@+id/userScoreTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:text="Stress Score: 16 (Mild)" />
+
+    <TextView
+        android:id="@+id/userScoreTextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:text="Depression Score: 8 (Normal)" />
+
+    <TextView
+        android:id="@+id/userScoreTextVie2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:text="Anxiety Score: 11 (Moderate)" />
+
+    <Button
+        android:id="@+id/vedio_modules"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="click here to acess vedio modules"
+        android:layout_marginTop="40dp"/>
+
+    <Button
+
+        android:id="@+id/visit_specialist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="click here to visit specialists"/>
+
+
+
+
+
+
+</LinearLayout>
