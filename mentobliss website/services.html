@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #26421e, #04a527); /* Gradient background */
+            color: #ffffff; /* White text */
+        }
+
+        header {
+            background: linear-gradient(to right, #00E676, #00C853); /* Gradient header background */
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        section {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 20px;
+            text-align: center;
+        }
+
+        .service {
+            border: 1px solid #00C853;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+            background: linear-gradient(to bottom, #FFFFFF, #E0F7FA); /* Gradient service background */
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 25%;
+        }
+
+        .service:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            color: #00C853; /* Green heading */
+        }
+
+        p {
+            color: #777;
+        }
+
+        .feature-list {
+            list-style: none;
+            padding: 20px;
+            background: linear-gradient(to right, #E0F7FA, #FFFFFF); /* Gradient feature list background */
+            border-radius: 10px;
+            text-align: center;
+            margin: 20px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .feature {
+            text-align: center;
+            background: linear-gradient(to right, #6fcd4a, #0e5607); /* Gradient feature background */
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background 0.3s;
+            width: 20%;
+        }
+
+        .feature:hover {
+            background: linear-gradient(to right, #fafafa, #f9f9f9);
+            color: #0e5607; /* Hover effect for feature background */
+        }
+
+        footer {
+            background: linear-gradient(to right, #00C853, #00E676); /* Gradient footer background */
+            color: white;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+    <title>MentoBliss Services</title>
+</head>
+<body>
+
+    <header>
+        <h1 style="font-size: 2em;">MentoBliss Services</h1>
+    </header>
+
+    <section>
+        <div class="service">
+            <h2>Stress Level Detection</h2>
+            <p>For stress level detection in the MentoBliss application, we employ 
+                a sophisticated algorithm that utilizes machine learning and psychological research. 
+                The Android-based system prompts users with a series of carefully crafted questions designed to assess 
+                various aspects of their emotional state. The answers are then processed through a proprietary stress
+                 prediction model, 
+                taking into account factors such as response time, sentiment analysis, and pattern recognition. 
+                The model is trained on a diverse dataset to ensure accurate and personalized results. Additionally, 
+                real-time user feedback is incorporated to continually refine and enhance the algorithm's effectiveness. 
+                The stress level detection feature provides users with valuable insights into their emotional well-being, 
+                fostering a proactive approach to mental health management.</p>
+        </div>
+
+        <div class="service">
+            <h2>Mood-Boosting Activities</h2>
+            <p>In the realm of mood-boosting activities within MentoBliss, our Android
+                 application employs an intuitive recommendation engine backed by psychological principles and
+                  user preferences. After assessing the user's stress level, the system dynamically generates personalized 
+                  suggestions for activities proven to enhance mood and reduce stress. These activities span a spectrum of options, 
+                  including mindfulness exercises, physical activities, creative pursuits, and social engagements. The recommendation 
+                  engine leverages machine learning algorithms to adapt and refine suggestions based on user feedback and engagement patterns.
+                   This approach ensures that users receive tailored and effective mood-boosting activities, promoting a positive mental state 
+                   and overall well-being. The seamless integration of these personalized activities aims to empower users with practical 
+                strategies for improving their mood and managing stress effectively.</p>
+        </div>
+
+        <div class="service">
+            <h2>Virtual One-on-One Interaction</h2>
+            <p>Facilitating virtual one-on-one interactions with mental health professionals is a pivotal component of the MentoBliss application, creating a supportive environment for users to address their mental health needs. Leveraging Android technology, the app provides a secure and user-friendly platform for users to connect with qualified psychiatrists in real-time.
+
+                The virtual interaction feature incorporates end-to-end encryption to 
+                ensure the privacy and confidentiality of user conversations. Through the app, 
+                users can schedule and participate in private sessions with mental health professionals, 
+                fostering a safe space for open dialogue and personalized support.
+                
+                The Android-based virtual interaction system integrates seamlessly with 
+                the overall MentoBliss framework, enabling users to transition from stress level assessment to 
+                tailored mood-boosting activities and, when necessary, to direct one-on-one consultations with mental health experts.
+                 This comprehensive approach aligns with our commitment to promoting mental well-being by combining 
+                innovative technology with compassionate and expert-driven support.</p>
+        </div>
+    </section>
+
+    <section>
+        <div class="feature-list">
+            <li class="feature">Personalized Insights</li>
+            <li class="feature">User-friendly Interface</li>
+            <li class="feature">Real-time Interaction</li>
+            <li class="feature">Secure Virtual Sessions</li>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 MentoBliss. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

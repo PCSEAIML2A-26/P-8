@@ -1,0 +1,192 @@
+*{
+    font-family: 'Inter', sans-serif;
+}
+
+nav {
+    font-size: 170%;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    padding: 10px;
+    text-align: right;
+    background-color: rgba(114, 180, 98, 0.5);
+    border: 1px solid #0c0823;
+
+}
+
+nav a {
+    color: #0c0823;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: rgb(9, 86, 15);
+    color: aliceblue;
+    border-radius: 7px;
+    transform: scale(1.2);
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+/* ----------------background image-------------------------------- */
+.bg-img-land img{
+    filter: blur(0.7458557588805167vh);
+    width: 100vw;
+    height: 70vh;
+}
+
+/* --------------------------------------------------------- heading wala hissa --------------------------------------------------------------- */
+.heading-subtitle{
+    text-align: center;
+    display: block;
+    transform: translateZ(21.52852529601722vh);
+}
+.heading{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 5.382131324004305vh;
+    font-weight: 900;
+    margin-top: -45.821313240043054vh;
+    /* text shadow blur*/
+    text-shadow: 0 0 0.0458557588805167vh black;
+    animation: textAnimation 2s ease-in-out infinite alternate;
+}
+@keyframes textAnimation {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+.mind{
+    color: #72d34f;
+}
+
+.space{
+    color: #edeff4;
+}
+.find{
+    transform: translateY(-6.458557588805167vh);
+}
+
+/* ------------------------------------------------------------------ quotes ------------------------------------------------------------------------- */
+ .wrapper{
+    display: block;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: #657085;
+}
+
+.wrapper .dynamic-text{
+    margin-left: -20px;
+    margin-top: 150px;
+    height: 90px;
+    line-height: 0px;
+    overflow: hidden;
+}
+
+.dynamic-text li{
+    list-style: none;
+    font-size: 25px;
+    font-weight: 500;
+     text-shadow: 1px 1px black; 
+    font-weight: 700;
+    position: relative;
+    top: 0;
+    line-height: 100px;
+    animation: slideup 450s steps(100) infinite;
+}
+
+.dynamic-text {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+  }
+  
+  .dynamic-text li {
+    animation: slideUp 5s linear infinite;
+    opacity: 0;
+  }
+  
+  /* Define the animation keyframes */
+  @keyframes slideUp {
+    0% {
+      transform: translateY(100%);
+      opacity: 0;
+    }
+    10% {
+      opacity: 1;
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+  }
+  
+
+
+
+/* Small devices (phones) */
+@media only screen and (max-width: 600px) {
+    
+    .heading h1 {
+        font-size: 28px; 
+    }
+
+    .dynamic-text li span {
+        font-size: 14px; 
+    }
+
+    
+}
+
+
+
+
+/* ---------------------------------- ENTRY BUTTON ------------------------------------- */
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+button{
+    background-color: #72d34f;
+    width: 350px;
+    height: 55px;
+    border-style: none;
+    border-radius: 12px;
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.5s;
+}
+button:hover{
+    width: 275px;
+    height: 60px;
+    background-color: green;
+    border-radius: 16px;
+}
+button a{
+    text-decoration: none;
+    color: white;
+}
+.fade-element {
+    text-align: center;
+    transition: opacity 0.5s ease; /* Define the transition */
+  }
+  
+  .fade-element:hover {
+    opacity: 0.5; /* Change the opacity on hover */
+  }
